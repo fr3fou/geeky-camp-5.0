@@ -17,6 +17,7 @@ public class Unique {
                 chars.add(input.charAt(i));
             }
         }
+
         System.out.println("true");
     }
 }

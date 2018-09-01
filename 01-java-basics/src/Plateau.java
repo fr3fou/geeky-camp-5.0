@@ -13,16 +13,11 @@ public class Plateau {
             return;
         }
 
-        List<Character> numbs = new ArrayList<>();
-        for (int i = 0; i < input.length(); i++) {
-            numbs.add(Character.toLowerCase(input.charAt(i)));
-        }
-
         long currentSeqLen = 1;
         long bestSeqLen = 0;
 
-        for (int i = 1; i < numbs.size(); i++) {
-            if (numbs.get(i) != numbs.get(i - 1)) {
+        for (int i = 1; i < input.length(); i++) {
+            if (input.charAt(i) != input.charAt(i - 1)) {
                 currentSeqLen = 1;
             } else {
                 currentSeqLen++;

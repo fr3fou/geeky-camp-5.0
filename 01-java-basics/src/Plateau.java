@@ -11,7 +11,7 @@ public class Plateau {
         if(input.length() == 1) {
             System.out.println(1);
             return;
-            }
+        }
 
         List<Character> numbs = new ArrayList<>();
         for (int i = 0; i < input.length(); i++) {
@@ -29,12 +29,9 @@ public class Plateau {
             }
             if (currentSeqLen > bestSeqLen) {
                 bestSeqLen = currentSeqLen;
-            } else {
-                bestSeqLen = bestSeqLen;
             }
         }
 
         System.out.println(bestSeqLen);
     }
 }
-

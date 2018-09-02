@@ -5,10 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/Champion.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb83e205-2efc-4348-b303-f04aa063dcc0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/01-java-basics/Anagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/01-java-basics/Anagram.class" afterDir="false" />
-    </list>
+    <list default="true" id="bb83e205-2efc-4348-b303-f04aa063dcc0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,17 +48,45 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1049719860">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="172" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="172" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="01-java-basics" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BullsAndCows.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state relative-caret-position="38">
+              <caret line="108" selection-start-line="108" selection-end-line="109" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,10 +94,19 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PatternMatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="11" column="29" lean-forward="true" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Anagram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="532">
               <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="18" selection-end-column="9" />
             </state>
           </provider>
@@ -99,6 +133,7 @@
         <option value="$PROJECT_DIR$/src/Champion.java" />
         <option value="$PROJECT_DIR$/src/Anagram.java" />
         <option value="$PROJECT_DIR$/src/BullsAndCows.java" />
+        <option value="$PROJECT_DIR$/src/PatternMatcher.java" />
       </list>
     </option>
   </component>
@@ -121,12 +156,33 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="02-java-basics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="02-java-basics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="02-java-basics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="02-java-basics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535895835715" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535924959870" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
@@ -143,7 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BullsAndCows">
+  <component name="RunManager" selected="Application.PatternMatcher">
     <configuration name="Anagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Anagram" />
       <module name="01-java-basics" />
@@ -165,8 +221,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HowMany" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HowMany" />
+    <configuration name="PatternMatcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PatternMatcher" />
       <module name="01-java-basics" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -199,19 +255,19 @@
     </configuration>
     <list>
       <item itemvalue="Plugin.Plugin" />
-      <item itemvalue="Application.HowMany" />
       <item itemvalue="Application.Plateau" />
       <item itemvalue="Application.Champion" />
       <item itemvalue="Application.Anagram" />
       <item itemvalue="Application.BullsAndCows" />
+      <item itemvalue="Application.PatternMatcher" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PatternMatcher" />
         <item itemvalue="Application.BullsAndCows" />
         <item itemvalue="Application.Anagram" />
         <item itemvalue="Application.Champion" />
         <item itemvalue="Application.Plateau" />
-        <item itemvalue="Application.HowMany" />
       </list>
     </recent_temporary>
   </component>
@@ -230,11 +286,12 @@
       <workItem from="1535867415754" duration="6936000" />
       <workItem from="1535884429537" duration="9493000" />
       <workItem from="1535893943416" duration="1855000" />
+      <workItem from="1535915379836" duration="2654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43428000" />
+    <option name="totallyTimeSpent" value="46082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1042" extended-state="6" />
@@ -246,7 +303,7 @@
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.50873363" side_tool="true" weight="0.18530351" />
+      <window_info active="true" id="Favorites" order="6" sideWeight="0.50873363" side_tool="true" visible="true" weight="0.18530351" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.48034933" />
@@ -321,8 +378,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BullsAndCows.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        <state relative-caret-position="38">
+          <caret line="108" selection-start-line="108" selection-end-line="109" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -331,8 +388,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Anagram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="532">
           <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-10-jdk/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="2033" column="19" selection-start-line="2033" selection-start-column="19" selection-end-line="2033" selection-end-column="19" />
+          <folding>
+            <element signature="e#81222#81223#0" expanded="true" />
+            <element signature="e#81271#81272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PatternMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="11" column="29" lean-forward="true" selection-end-line="14" />
         </state>
       </provider>
     </entry>

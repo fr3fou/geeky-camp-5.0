@@ -7,7 +7,7 @@ public class Unique {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
 
-        List<Character> chars = new ArrayList<>();
+        List<Character>  chars = new ArrayList<>();
 
         for (int i = 0; i < input.length(); i++) {
             if(chars.contains(input.charAt(i))) {
@@ -17,6 +17,8 @@ public class Unique {
                 chars.add(input.charAt(i));
             }
         }
+
+
 
         System.out.println("true");
     }

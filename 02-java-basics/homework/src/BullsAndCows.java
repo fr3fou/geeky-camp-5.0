@@ -10,30 +10,30 @@ public class BullsAndCows {
         System.out.println("Cows & Bulls!");
         System.out.print("Input digit amount: ");
         int digitLength = Integer.parseInt(scanner.nextLine());
-        GuessManager guesser = new GuessManager(digitLength);
+        Game game = new Game(digitLength);
 
         System.out.println("The computer has generated a random " + digitLength + " digit long number.");
         System.out.println("Your goal is to try and guess the number by the hints given.");
         System.out.println("The input mustn't have duplicate digits and be exactly " + digitLength + " digits long.");
 
         int attemptCounter = 0;
-        while (guesser.getCorrect() == false) {
+        while (game.getCorrect() == false) {
             System.out.print("Your guess is: ");
             String input = scanner.nextLine();
             try {
-                guesser.setNumber(input);
+                game.setNumber(input);
             } catch (Exception e) {
                 System.out.println("Invalid input! Try again...");
                 continue;
             }
-            guesser.guess();
+            game.guess();
             attemptCounter++;
 
-            if(guesser.getCorrect()) {
+            if(game.getCorrect()) {
                 break;
             }
 
-            System.out.println(guesser.getCowsAmount() + " cow(s) " + guesser.getBullsAmount() + " bull(s)");
+            System.out.println(game.getCowsAmount() + " cow(s) " + game.getBullsAmount() + " bull(s)");
         }
 
         System.out.println("4 Bulls! You win!");
@@ -43,7 +43,7 @@ public class BullsAndCows {
 }
 
 
-class GuessManager {
+class Game {
 
     // --------------- ----------- ---------------
     // --------------- F I E L D S ---------------
@@ -62,7 +62,7 @@ class GuessManager {
     // --------------- C O N S T R U C T O R ---------------
     // --------------- --------------------- ---------------
 
-    public GuessManager(int length) {
+    public Game(int length) {
         this.digitLength = length;
         this.generatedNumber = Utility.generateNumber(digitLength);
     }

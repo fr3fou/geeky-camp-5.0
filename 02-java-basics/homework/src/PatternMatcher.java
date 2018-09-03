@@ -10,19 +10,23 @@ public class PatternMatcher {
         String s = input[0];
         String p = input[1];
 
+        if (p.matches("^[*]*$")) {
+            System.out.println(true);
+            return;
+        }
+
         if (p.charAt(0) == '*') {
             p = p.substring(1);
         }
 
         if (p.charAt(p.length() - 1) == '*') {
-            p = p.substring(0, p.length() - 2);
+            p = p.substring(0, p.length() - 1);
         }
 
         System.out.println(findMatch(s, p, 0, 0));
 
     }
 
-    //
     public static Boolean findMatch(String s, String p, int i, int j) {
         if (i < s.length() && j == p.length() - 1 && (s.charAt(i) == p.charAt(j) || p.charAt(j) == '?')) {
             return true;
@@ -53,8 +57,5 @@ public class PatternMatcher {
 
         // if there is no match yet, call again
         return findMatch(s, p, i + 1, 0);
-
     }
-
-
 }

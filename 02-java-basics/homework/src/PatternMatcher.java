@@ -10,7 +10,7 @@ public class PatternMatcher {
         Scanner scanner = new Scanner(System.in);
         String[] input = scanner.nextLine().split(" ");
 
-        if(input.length != 2) {
+        if (input.length != 2) {
             System.out.println(true);
             return;
         }
@@ -20,7 +20,7 @@ public class PatternMatcher {
 
         // we can just do a normal ".contains" if there are no special characters
         if (p.contains("*") || p.contains("?")) {
-            System.out.println(findMatch(s,p));
+            System.out.println(findMatch(s, p));
         } else {
             System.out.println(s.contains(p));
         }
@@ -29,10 +29,13 @@ public class PatternMatcher {
 
     public static Boolean findMatch(String text, String pattern) {
 
-        // fuck this lmao
-        pattern = pattern.replace('?', '.');
-        pattern = pattern.replaceAll("\\*", ".*");
-
-        return text.matches(pattern);
+        
+//        // fuck this lmao
+//        pattern = pattern.replace('?', '.');
+//        pattern = pattern.replaceAll("\\*", ".*");
+//
+//        return text.matches(pattern);
     }
+
+
 }

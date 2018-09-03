@@ -3,8 +3,8 @@
 GitHub repo for the Geeky-Camp-5.0 (31/09/2018 -> 14/09/2018)
 
 - 01.09 - [Git](/01-git/) | [Java Basics](/02-java-basics/)
-- 02.09 - [Java OOP](/03-java-oop) | Clean Code
-- 03.09 - Linux | IoT
+- 02.09 - [Java OOP](/03-java-oop/) | Clean Code
+- 03.09 - [Linux](/04-linux/) | IoT
 - 04.09 - Machine Learning | Blockchain
 - 05.09 - Data structures | Algorithms
 - 06.09 - Databases

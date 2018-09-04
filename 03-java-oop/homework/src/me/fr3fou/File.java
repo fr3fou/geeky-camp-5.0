@@ -36,7 +36,7 @@ public class File extends FileSystemObject {
     }
 
     @Override
-    protected void delete() {
+    protected void delete(String path) {
 
     }
 }

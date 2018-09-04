@@ -7,8 +7,10 @@ public class InMemoryFileSystem {
 
         fs.createDir("home", Permission.READ_WRITE);
         fs.changeDir("home");
-        fs.createFile("gosho", Permission.READ_WRITE, FileType.TEXT, "Gosho sucks");
+        fs.createFile("gosho", Permission.READ_WRITE, FileType.TEXT, "Gosho dabs");
         fs.createDir("pesho", Permission.READ_WRITE);
         fs.changeDir("pesho");
+        fs.changeDir("/");
+        fs.deleteDir("home");
     }
 }

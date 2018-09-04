@@ -59,7 +59,12 @@ public class Directory extends FileSystemObject {
     }
 
     @Override
-    protected void delete() {
+    protected void delete(String path) {
+        if (this.children.containsKey(this.path + path + "/")) {
+                this.children.remove(this.path + path + "/");
+        } else {
+            System.out.println("Object doesn't exist");
+        }
     }
 
     // ---------- --------------- ----------

@@ -59,4 +59,8 @@ public class FileSystem {
         FileSystemObject fso = new File(path, permission, type, content);
         this.currentDir.create(fso);
     }
+
+    public void deleteDir(String path) {
+        this.currentDir.delete(path);
+    }
 }

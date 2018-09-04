@@ -11,7 +11,7 @@ public abstract class FileSystemObject {
     protected abstract void create(FileSystemObject fso);
     protected abstract void open();
     protected abstract void rename(String newName);
-    protected abstract void delete();
+    protected abstract void delete(String path);
 
     public String getPath() {
         return path;

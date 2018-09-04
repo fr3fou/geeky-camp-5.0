@@ -5,10 +5,10 @@ public class InMemoryFileSystem {
         // hardcoding methods
         FileSystem fs = new FileSystem();
 
-        fs.createFolder("home", Permission.READ_WRITE);
+        fs.createDir("home", Permission.READ_WRITE);
         fs.changeDir("home");
         fs.createFile("gosho", Permission.READ_WRITE, FileType.TEXT, "Gosho sucks");
-        fs.createFolder("pesho", Permission.READ_WRITE);
+        fs.createDir("pesho", Permission.READ_WRITE);
         fs.changeDir("pesho");
     }
 }

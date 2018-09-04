@@ -4,8 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Directory extends FileSystemObject {
-
-
     private Map<String, FileSystemObject> children;
 
     // ---------- --------------------- ----------
@@ -18,17 +16,24 @@ public class Directory extends FileSystemObject {
         this.children = new HashMap();
     }
 
+    private Directory(Directory dir) {
+        this.path = dir.getPath();
+        this.permission = dir.getPermission();
+        this.children = dir.getChildren();
+    }
+
     // ---------- ------------- ----------
     // ---------- M E T H O D S ----------
     // ---------- ------------- ----------
 
     public Directory changeDir(String path) {
         if (this.children.containsKey(this.path + path + "/")) {
-            return (Directory)this.children.get(this.path + path);
+            return (Directory) this.children.get(this.path + path + "/");
         } else {
             System.out.println("Directory doesn't exist");
+            return new Directory(this);
         }
-        
+
     }
 
     // ---------- ----------------- ----------
@@ -38,7 +43,9 @@ public class Directory extends FileSystemObject {
     @Override
     protected void create(FileSystemObject fso) {
         //fso.parent = this;
-        this.children.put(this.path + fso.getPath() + "/", fso);
+        String path = this.path + fso.getPath() + "/";
+        fso.setPath(path);
+        this.children.put(path, fso);
     }
 
     @Override
@@ -59,5 +66,9 @@ public class Directory extends FileSystemObject {
     // ---------- M U T A T O R S ----------
     // ---------- --------------- ----------
 
+
+    private Map<String, FileSystemObject> getChildren() {
+        return children;
+    }
 }
 

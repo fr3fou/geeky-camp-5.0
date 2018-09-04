@@ -42,7 +42,7 @@ public class FileSystem {
         }
     }
 
-    public void createFolder(String path, Permission permission) {
+    public void createDir(String path, Permission permission) {
         // creates folder in root dir
         FileSystemObject fso;
 

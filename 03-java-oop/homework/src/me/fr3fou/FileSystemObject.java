@@ -7,8 +7,8 @@ public abstract class FileSystemObject {
     protected String path;
 
     protected boolean isOpen = false;
-    protected abstract void create(FileSystemObject fso);
 
+    protected abstract void create(FileSystemObject fso);
     protected abstract void open();
     protected abstract void rename(String newName);
     protected abstract void delete();

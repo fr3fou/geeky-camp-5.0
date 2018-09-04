@@ -3,7 +3,6 @@ package me.fr3fou;
 public class FileSystem {
     private Directory root;
     private Directory currentDir;
-    private String currentPath;
 
     // ---------- --------------------- ----------
     // ---------- C O N S T R U C T O R ----------
@@ -12,7 +11,6 @@ public class FileSystem {
     public FileSystem() {
         this.root = new Directory("/", Permission.READ_WRITE);
         this.currentDir = this.root;
-        this.currentPath = this.root.path;
     }
 
     // ---------- ------------- ----------
@@ -20,32 +18,41 @@ public class FileSystem {
     // ---------- ------------- ----------
 
     public void changeDir(String path) {
+        // goes to root dir
+        if (path == "/") {
+            this.currentDir = this.root;
+            return;
+        }
+
+        // goes to folder inside root dir
         if (path.startsWith("/")) {
             this.currentDir = this.root;
             path = path.substring(1);
         }
+
+        // goes to a nested folder
         if (path.contains("/")) {
             String[] splitDirs = path.split("/");
             for (String dir : splitDirs) {
                 this.currentDir = this.currentDir.changeDir(dir);
             }
         } else {
+            // goes to folder in current dir
             this.currentDir = this.currentDir.changeDir(path);
         }
     }
 
     public void createFolder(String path, Permission permission) {
-        if (path == "/") {
-            this.currentDir = this.root;
-            return;
-        }
+        // creates folder in root dir
+        FileSystemObject fso;
+
         if (path.startsWith("/")) {
-            FileSystemObject fso = new Directory(path.substring(1), permission);
+            fso = new Directory(path, permission);
             this.root.create(fso);
-        } else if (path.endsWith("/")) {
-            FileSystemObject fso = new Directory(path.substring(0, path.length() - 1), permission);
-            this.currentDir.create(fso);
+        } else {
+            fso = new Directory(path, permission);
         }
+        this.currentDir.create(fso);
     }
 
     public void createFile(String path, Permission permission, FileType type, String content) {

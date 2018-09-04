@@ -18,18 +18,17 @@ public class Directory extends FileSystemObject {
         this.children = new HashMap();
     }
 
-
     // ---------- ------------- ----------
     // ---------- M E T H O D S ----------
     // ---------- ------------- ----------
 
     public Directory changeDir(String path) {
-        if (this.children.containsKey(path)) {
-            return (Directory)this.children.get(path);
+        if (this.children.containsKey(this.path + path + "/")) {
+            return (Directory)this.children.get(this.path + path);
         } else {
             System.out.println("Directory doesn't exist");
-            return this;
         }
+        
     }
 
     // ---------- ----------------- ----------
@@ -39,7 +38,7 @@ public class Directory extends FileSystemObject {
     @Override
     protected void create(FileSystemObject fso) {
         //fso.parent = this;
-        this.children.put(fso.getPath(), fso);
+        this.children.put(this.path + fso.getPath() + "/", fso);
     }
 
     @Override
@@ -59,7 +58,6 @@ public class Directory extends FileSystemObject {
     // ---------- --------------- ----------
     // ---------- M U T A T O R S ----------
     // ---------- --------------- ----------
-
 
 }
 

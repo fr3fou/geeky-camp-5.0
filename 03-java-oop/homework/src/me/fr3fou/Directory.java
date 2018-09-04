@@ -33,7 +33,6 @@ public class Directory extends FileSystemObject {
             System.out.println("Directory doesn't exist");
             return new Directory(this);
         }
-
     }
 
     // ---------- ----------------- ----------

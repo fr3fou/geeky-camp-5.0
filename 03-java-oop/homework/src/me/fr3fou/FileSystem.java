@@ -18,8 +18,16 @@ public class FileSystem {
     // ---------- ------------- ----------
 
     public void changeDir(String path) {
+        // goes up a dir
+        if (path.equals("..") || path.equals("../")) {
+            String currentPath = this.currentDir.getPath();
+            currentPath = currentPath.substring(0, currentPath.length() - 1);
+            String parent = currentPath.substring(currentPath.lastIndexOf("/"));
+            this.currentDir = this.currentDir.changeDir(parent);
+        }
+
         // goes to root dir
-        if (path == "/") {
+        if (path.equals("/")) {
             this.currentDir = this.root;
             return;
         }

@@ -6,11 +6,15 @@ public class InMemoryFileSystem {
         FileSystem fs = new FileSystem();
 
         fs.createDir("home", Permission.READ_WRITE);
-
         fs.changeDir("home");
+
         fs.createDir("test", Permission.READ_WRITE);
-        fs.createFile("gosh", Permission.READ_WRITE, FileType.TEXT, "This is a test");
-        fs.deleteDir("test");
+        fs.changeDir("test");
+
+        fs.createDir("asdf", Permission.READ_WRITE);
+        fs.changeDir("asdf");
+
+        fs.changeDir("../");
 
     }
 }

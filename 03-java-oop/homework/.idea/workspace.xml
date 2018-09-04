@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dd69175-39f7-4ea6-a0d6-286b30675306" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../02-java-basics/homework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../02-java-basics/homework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02-java-basics/homework/src/Anagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../02-java-basics/homework/src/me/fr3fou/Anagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02-java-basics/homework/src/BullsAndCows.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../02-java-basics/homework/src/me/fr3fou/BullsAndCows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02-java-basics/homework/src/Champion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../02-java-basics/homework/src/me/fr3fou/Champion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02-java-basics/homework/src/HowMany.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../02-java-basics/homework/src/me/fr3fou/HowMany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02-java-basics/homework/src/PatternMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../02-java-basics/homework/src/me/fr3fou/PatternMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02-java-basics/homework/src/Plateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../02-java-basics/homework/src/me/fr3fou/Plateau.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02-java-basics/homework/src/Unique.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../02-java-basics/homework/src/me/fr3fou/Unique.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-oop/me/fr3fou/Directory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-oop/me/fr3fou/Directory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-oop/me/fr3fou/File.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-oop/me/fr3fou/File.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-oop/me/fr3fou/FileSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-oop/me/fr3fou/FileSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-oop/me/fr3fou/FileSystemObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-oop/me/fr3fou/FileSystemObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-oop/me/fr3fou/InMemoryFileSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-oop/me/fr3fou/InMemoryFileSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fr3fou/FileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fr3fou/FileSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fr3fou/InMemoryFileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fr3fou/InMemoryFileSystem.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,9 +27,10 @@
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -45,12 +46,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="48" />
-          <entry key="java" value="4734" />
+          <entry key="java" value="5031" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4734" />
+          <entry key="JAVA" value="5031" />
           <entry key="PLAIN_TEXT" value="48" />
         </counts>
       </usages-collector>
@@ -61,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/fr3fou/Directory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+            <state relative-caret-position="270">
+              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,11 +71,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/fr3fou/FileSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+            <state relative-caret-position="380">
+              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/me/fr3fou/InMemoryFileSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -82,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/fr3fou/File.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="38">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -91,21 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/fr3fou/FileSystemObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
+            <state relative-caret-position="232">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#191#192#0" expanded="true" />
-                <element signature="e#218#219#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/me/fr3fou/InMemoryFileSystem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -138,8 +135,8 @@
         <option value="$PROJECT_DIR$/src/me/fr3fou/FileType.java" />
         <option value="$PROJECT_DIR$/src/me/fr3fou/FileSystemObject.java" />
         <option value="$PROJECT_DIR$/src/me/fr3fou/File.java" />
-        <option value="$PROJECT_DIR$/src/me/fr3fou/InMemoryFileSystem.java" />
         <option value="$PROJECT_DIR$/src/me/fr3fou/Directory.java" />
+        <option value="$PROJECT_DIR$/src/me/fr3fou/InMemoryFileSystem.java" />
         <option value="$PROJECT_DIR$/src/me/fr3fou/FileSystem.java" />
       </list>
     </option>
@@ -171,7 +168,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536073020218" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536075895651" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
@@ -224,12 +221,13 @@
       <workItem from="1536061280299" duration="89000" />
       <workItem from="1536061384332" duration="1227000" />
       <workItem from="1536063048444" duration="616000" />
-      <workItem from="1536067793784" duration="5217000" />
+      <workItem from="1536067793784" duration="5862000" />
+      <workItem from="1536074799791" duration="1092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20499000" />
+    <option name="totallyTimeSpent" value="22236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1042" extended-state="6" />
@@ -245,7 +243,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3187773" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3187773" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -299,45 +297,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/fr3fou/InMemoryFileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/fr3fou/FileSystemObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#191#192#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/me/fr3fou/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state relative-caret-position="38">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/fr3fou/Directory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        <state relative-caret-position="270">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/fr3fou/FileSystemObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/me/fr3fou/FileSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        <state relative-caret-position="380">
+          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/fr3fou/InMemoryFileSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>

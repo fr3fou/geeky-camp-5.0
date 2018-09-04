@@ -29,10 +29,16 @@ public class FileSystem {
             for (String dir : splitDirs) {
                 this.currentDir = this.currentDir.changeDir(dir);
             }
+        } else {
+            this.currentDir = this.currentDir.changeDir(path);
         }
     }
 
     public void createFolder(String path, Permission permission) {
+        if (path == "/") {
+            this.currentDir = this.root;
+            return;
+        }
         if (path.startsWith("/")) {
             FileSystemObject fso = new Directory(path.substring(1), permission);
             this.root.create(fso);
@@ -44,6 +50,6 @@ public class FileSystem {
 
     public void createFile(String path, Permission permission, FileType type, String content) {
         FileSystemObject fso = new File(path, permission, type, content);
-        this.root.create(fso);
+        this.currentDir.create(fso);
     }
 }

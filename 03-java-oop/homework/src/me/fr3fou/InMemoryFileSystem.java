@@ -28,6 +28,16 @@ public class InMemoryFileSystem {
         // /usr/
         fs.changeDir("/usr/");
 
+        // /usr/var/
+        fs.createDir("var", Permission.READ_WRITE);
+        fs.changeDir("var");
+
+        // /usr/var/uwu/
+        fs.createDir("uwu", Permission.READ_WRITE);
+        fs.changeDir("uwu");
+
+        // /home/test/asdf
+        fs.changeDir("../../home/test/asdf");
 
     }
 }

@@ -1,3 +1,5 @@
+package me.fr3fou;
+
 import java.util.*;
 
 public class HowMany {

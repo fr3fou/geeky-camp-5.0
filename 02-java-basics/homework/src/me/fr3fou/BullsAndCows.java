@@ -1,3 +1,5 @@
+package me.fr3fou;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

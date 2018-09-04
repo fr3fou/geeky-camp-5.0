@@ -20,15 +20,12 @@ public class FileSystem {
     public void changeDir(String path) {
         // goes up a dir
         if (path.equals("..") || path.equals("../")) {
-            String currentPath = this.currentDir.getPath();
-            currentPath = currentPath.substring(1, currentPath.length() - 1);
-            String parent = currentPath.substring(0, currentPath.lastIndexOf("/"));
-
-            String[] splitDirs = parent.split("/");
-            this.currentDir = this.root;
-
-            for (String dir : splitDirs) {
-                this.currentDir = this.currentDir.changeDir(dir);
+            upOneDir();
+            return;
+        } else if (path.startsWith("../")) {
+            while(path.startsWith("../")) {
+                upOneDir();
+                path = path.substring(2);
             }
         }
 
@@ -76,5 +73,18 @@ public class FileSystem {
 
     public void deleteDir(String path) {
         this.currentDir.delete(path);
+    }
+
+    private void upOneDir() {
+        String currentPath = this.currentDir.getPath();
+        currentPath = currentPath.substring(1, currentPath.length() - 1);
+        String parent = currentPath.substring(0, currentPath.lastIndexOf("/"));
+
+        String[] splitDirs = parent.split("/");
+        this.currentDir = this.root;
+
+        for (String dir : splitDirs) {
+            this.currentDir = this.currentDir.changeDir(dir);
+        }
     }
 }

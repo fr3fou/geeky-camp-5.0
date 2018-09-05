@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/me/fr3fou/Directory.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3dd69175-39f7-4ea6-a0d6-286b30675306" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/me/fr3fou/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fr3fou/Directory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/fr3fou/FileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fr3fou/FileSystem.java" afterDir="false" />
-    </list>
+    <list default="true" id="3dd69175-39f7-4ea6-a0d6-286b30675306" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +16,7 @@
     <session id="515579754">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.28" value="1" />
@@ -64,7 +61,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/me/fr3fou/Directory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
+            <state relative-caret-position="925">
               <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -235,7 +232,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536156280164" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536156647619" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
@@ -291,12 +288,12 @@
       <workItem from="1536067793784" duration="5862000" />
       <workItem from="1536074799791" duration="1092000" />
       <workItem from="1536080325129" duration="17812000" />
-      <workItem from="1536151376322" duration="4842000" />
+      <workItem from="1536151376322" duration="5335000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48731000" />
+    <option name="totallyTimeSpent" value="49224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1042" extended-state="6" />
@@ -496,7 +493,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/fr3fou/Directory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
+        <state relative-caret-position="925">
           <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="imports" expanded="true" />

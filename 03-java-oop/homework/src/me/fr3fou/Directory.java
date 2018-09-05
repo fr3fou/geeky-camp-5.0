@@ -54,7 +54,7 @@ public class Directory extends FileSystemObject {
 
     }
 
-    private void delete(String path) {
+    public void delete(String path) {
         if (this.children.containsKey(this.path + path + "/")) {
             this.children.remove(this.path + path + "/");
         } else {

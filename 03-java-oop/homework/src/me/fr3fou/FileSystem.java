@@ -76,6 +76,10 @@ public class FileSystem {
         this.currentDir.create(fso);
     }
 
+    public void deleteFile(String path) {
+        this.currentDir.delete(path);
+    }
+
     private void upOneDir() {
         this.currentDir = (Directory) this.currentDir.getParent();
     }

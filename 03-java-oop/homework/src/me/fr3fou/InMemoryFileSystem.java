@@ -51,5 +51,7 @@ public class InMemoryFileSystem {
         fs.openFile("readme");
         fs.editFile("readme", "this is another example");
         fs.openFile("readme");
+        fs.deleteFile("readme");
+
     }
 }

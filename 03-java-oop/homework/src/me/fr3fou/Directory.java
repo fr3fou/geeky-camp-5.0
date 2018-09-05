@@ -38,7 +38,7 @@ public class Directory extends FileSystemObject {
         String fullPath = this.path + path + "/";
 
         if (this.children.containsKey(fullPath)) {
-            System.out.println("-- Changed to " + fullPath);
+            System.out.println("-- Changed to dir " + fullPath);
             return (Directory) this.children.get(fullPath);
         } else {
             System.out.println("-- Directory doesn't exist");
@@ -55,8 +55,8 @@ public class Directory extends FileSystemObject {
 
     public String open(String path) {
         if (this.children.containsKey(path)) {
-            System.out.println("-- Opened " + path);
-            return ((File) this.children.get(path)).getContent();
+            System.out.println("-- Opened file " + path);
+            return "---------------\n" + path + ": \n" + ((File) this.children.get(path)).getContent() + "\n---------------";
         } else {
             return "Object not found";
         }

@@ -11,6 +11,7 @@ public class FileSystem {
     public FileSystem() {
         this.root = new Directory("/", Permission.READ_WRITE);
         this.currentDir = this.root;
+        System.out.println("Created file system at /");
     }
 
     // ---------- ------------- ----------
@@ -71,12 +72,12 @@ public class FileSystem {
     }
 
     public void createFile(String path, Permission permission, FileType type, String content) {
-        FileSystemObject fso = new File(path, permission, type, content);
+        FileSystemObject fso = new File(path, permission, type, content, this.currentDir);
         this.currentDir.create(fso);
     }
 
     private void upOneDir() {
-        this.currentDir = (Directory)this.currentDir.getParent();
+        this.currentDir = (Directory) this.currentDir.getParent();
     }
 
     public void openFile(String path) {

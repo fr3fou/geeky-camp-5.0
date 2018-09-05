@@ -11,7 +11,7 @@ public class FileSystem {
     public FileSystem() {
         this.root = new Directory("/", Permission.READ_WRITE);
         this.currentDir = this.root;
-        System.out.println("Created file system at /");
+        System.out.println("-- Created file system at /");
     }
 
     // ---------- ------------- ----------
@@ -82,5 +82,9 @@ public class FileSystem {
 
     public void openFile(String path) {
         System.out.println(this.currentDir.open(this.currentDir.getPath() + path + "/"));
+    }
+
+    public void editFile(String path, String newContent) {
+        this.currentDir.edit(path, newContent);
     }
 }

@@ -20,4 +20,8 @@ public class File extends FileSystemObject {
     public String getContent() {
         return content;
     }
+
+    public void setContent(String newContent) {
+        this.content = newContent;
+    }
 }

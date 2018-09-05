@@ -38,10 +38,10 @@ public class Directory extends FileSystemObject {
         String fullPath = this.path + path + "/";
 
         if (this.children.containsKey(fullPath)) {
-            System.out.println("Changed to " + fullPath);
+            System.out.println("-- Changed to " + fullPath);
             return (Directory) this.children.get(fullPath);
         } else {
-            System.out.println("Directory doesn't exist");
+            System.out.println("-- Directory doesn't exist");
             return new Directory(this);
         }
     }
@@ -50,15 +50,25 @@ public class Directory extends FileSystemObject {
         String path = this.path + fso.getPath() + "/";
         fso.setPath(path);
         this.children.put(path, fso);
-        System.out.println("Created " + fso.getPath());
+        System.out.println("-- Created " + fso.getPath());
     }
 
     public String open(String path) {
         if (this.children.containsKey(path)) {
-            System.out.println("Opened " + path);
+            System.out.println("-- Opened " + path);
             return ((File) this.children.get(path)).getContent();
         } else {
             return "Object not found";
+        }
+    }
+
+    public void edit(String path, String newContent) {
+        String fullPath = this.path + path + "/";
+        if (this.children.containsKey(fullPath)) {
+            File file = ((File) this.children.get(fullPath));
+            file.setContent(newContent);
+            this.children.put(fullPath, file);
+            System.out.println("-- Edited " + fullPath);
         }
     }
 
@@ -71,9 +81,9 @@ public class Directory extends FileSystemObject {
 
         if (this.children.containsKey(fullPath)) {
             this.children.remove(fullPath);
-            System.out.println("Deleted " + path);
+            System.out.println("-- Deleted " + path);
         } else {
-            System.out.println("Object doesn't exist");
+            System.out.println("-- Object doesn't exist");
         }
     }
 

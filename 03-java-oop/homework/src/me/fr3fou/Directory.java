@@ -39,7 +39,7 @@ public class Directory extends FileSystemObject {
     // ---------- O V E R R I D E S ----------
     // ---------- ----------------- ----------
 
-    private void create(FileSystemObject fso) {
+    public void create(FileSystemObject fso) {
         //fso.parent = this;
         String path = this.path + fso.getPath() + "/";
         fso.setPath(path);

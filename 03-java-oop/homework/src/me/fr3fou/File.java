@@ -16,4 +16,7 @@ public class File extends FileSystemObject {
         this.isOpen = false;
     }
 
+    public String getContent() {
+        return content;
+    }
 }

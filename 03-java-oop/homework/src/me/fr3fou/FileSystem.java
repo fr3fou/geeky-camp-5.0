@@ -66,13 +66,13 @@ public class FileSystem {
         this.currentDir.create(fso);
     }
 
+    public void deleteDir(String path) {
+        this.currentDir.delete(path);
+    }
+
     public void createFile(String path, Permission permission, FileType type, String content) {
         FileSystemObject fso = new File(path, permission, type, content);
         this.currentDir.create(fso);
-    }
-
-    public void deleteDir(String path) {
-        this.currentDir.delete(path);
     }
 
     private void upOneDir() {
@@ -93,5 +93,9 @@ public class FileSystem {
         for (String dir : splitDirs) {
             this.currentDir = this.currentDir.changeDir(dir);
         }
+    }
+
+    public void openFile(String path) {
+        System.out.println(this.currentDir.open(this.currentDir.getPath() + path + "/"));
     }
 }

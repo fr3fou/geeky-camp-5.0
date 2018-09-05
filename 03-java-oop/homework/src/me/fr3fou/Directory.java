@@ -46,8 +46,12 @@ public class Directory extends FileSystemObject {
         this.children.put(path, fso);
     }
 
-    private void open() {
-
+    public String open(String path) {
+        if(this.children.containsKey(path)) {
+            return ((File)this.children.get(path)).getContent();
+        } else {
+            return "Object not found";
+        }
     }
 
     private void rename(String newName) {

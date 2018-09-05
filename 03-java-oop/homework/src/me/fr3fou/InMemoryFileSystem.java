@@ -7,37 +7,46 @@ public class InMemoryFileSystem {
         // /
         FileSystem fs = new FileSystem();
 
-        // /usr/
+        // mkdir /usr/
         fs.createDir("usr", Permission.READ_WRITE);
 
-        // /home/
+        // mkdir & cd/home/
         fs.createDir("home", Permission.READ_WRITE);
         fs.changeDir("home");
 
-        // /home/test/
+        // mkdir & cd /home/test/
         fs.createDir("test", Permission.READ_WRITE);
         fs.changeDir("test");
 
-        // /home/test/asdf/
+        // mkdir & cd /home/test/asdf/
         fs.createDir("asdf", Permission.READ_WRITE);
         fs.changeDir("asdf");
 
-        // /home/test/
+        // cd ../ (/home/test/)
         fs.changeDir("../");
 
-        // /usr/
+        // cd /usr/
         fs.changeDir("/usr/");
 
-        // /usr/var/
+        // mkdir & cd /usr/var/
         fs.createDir("var", Permission.READ_WRITE);
         fs.changeDir("var");
 
-        // /usr/var/uwu/
+        // mkdir & cd /usr/var/uwu/
         fs.createDir("uwu", Permission.READ_WRITE);
         fs.changeDir("uwu");
 
-        // /home/test/asdf
-        fs.changeDir("../../home/test/asdf");
+        // cd ../../../home/test/asdf (/home/test/asdf)
+        fs.changeDir("../../../home/test/asdf");
+
+        // cd ../ (/home/test/)
+        fs.changeDir("../");
+
+        // delete asdf
+        fs.deleteDir("asdf");
+
+        // touch readme
+        fs.createFile("readme", Permission.READ_WRITE, FileType.TEXT, "this is an example");
 
     }
 }

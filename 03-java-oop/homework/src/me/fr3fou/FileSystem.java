@@ -23,9 +23,9 @@ public class FileSystem {
             upOneDir();
             return;
         } else if (path.startsWith("../")) {
-            while(path.startsWith("../")) {
+            while (path.startsWith("../")) {
                 upOneDir();
-                path = path.substring(2);
+                path = path.substring(3);
             }
         }
 
@@ -77,6 +77,13 @@ public class FileSystem {
 
     private void upOneDir() {
         String currentPath = this.currentDir.getPath();
+
+        // if the user is inside one of the folders which are inside root, there is no need to run a loop
+        if (currentPath.matches("^\\/[\\w]+\\/$")) {
+            this.currentDir = this.root;
+            return;
+        }
+
         currentPath = currentPath.substring(1, currentPath.length() - 1);
         String parent = currentPath.substring(0, currentPath.lastIndexOf("/"));
 

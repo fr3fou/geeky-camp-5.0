@@ -18,7 +18,7 @@ public class Directory extends FileSystemObject {
 
     public Directory(String path, Permission permission, FileSystemObject parent) {
         this.path = path;
-        this.parent = parent;
+            this.parent = parent;
         this.permission = permission;
         this.children = new HashMap();
     }
@@ -54,9 +54,11 @@ public class Directory extends FileSystemObject {
     }
 
     public String open(String path) {
-        if (this.children.containsKey(path)) {
-            System.out.println("-- Opened file " + path);
-            return "---------------\n" + path + ": \n" + ((File) this.children.get(path)).getContent() + "\n---------------";
+        String fullPath = this.path + path + "/";
+
+        if (this.children.containsKey(fullPath)) {
+            System.out.println("-- Opened file " + fullPath);
+            return "~~~~~~~~~~~~~~~~~~~~~\n" + fullPath + ": \n" + ((File) this.children.get(fullPath)).getContent() + "\n~~~~~~~~~~~~~~~~~~~~~";
         } else {
             return "Object not found";
         }
@@ -64,6 +66,7 @@ public class Directory extends FileSystemObject {
 
     public void edit(String path, String newContent) {
         String fullPath = this.path + path + "/";
+
         if (this.children.containsKey(fullPath)) {
             File file = ((File) this.children.get(fullPath));
             file.setContent(newContent);

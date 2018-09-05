@@ -54,14 +54,14 @@ public class FileSystem {
     }
 
     public void createDir(String path, Permission permission) {
-        // creates folder in root dir
         FileSystemObject fso;
 
+        // creates folder in root dir
         if (path.startsWith("/")) {
-            fso = new Directory(path, permission);
+            fso = new Directory(path, permission, this.currentDir);
             this.root.create(fso);
         } else {
-            fso = new Directory(path, permission);
+            fso = new Directory(path, permission, this.currentDir);
         }
         this.currentDir.create(fso);
     }
@@ -76,23 +76,7 @@ public class FileSystem {
     }
 
     private void upOneDir() {
-        String currentPath = this.currentDir.getPath();
-
-        // if the user is inside one of the folders which are inside root, there is no need to run a loop
-        if (currentPath.matches("^\\/[\\w]+\\/$")) {
-            this.currentDir = this.root;
-            return;
-        }
-
-        currentPath = currentPath.substring(1, currentPath.length() - 1);
-        String parent = currentPath.substring(0, currentPath.lastIndexOf("/"));
-
-        String[] splitDirs = parent.split("/");
-        this.currentDir = this.root;
-
-        for (String dir : splitDirs) {
-            this.currentDir = this.currentDir.changeDir(dir);
-        }
+        this.currentDir = (Directory)this.currentDir.getParent();
     }
 
     public void openFile(String path) {

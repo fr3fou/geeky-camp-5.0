@@ -5,7 +5,8 @@ public abstract class FileSystemObject {
     //protected FileSystemObject parent;
 
     protected String path;
-
+    protected FileSystemObject parent;
+    
     protected boolean isOpen = false;
 
     public String getPath() {

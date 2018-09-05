@@ -16,8 +16,16 @@ public class Directory extends FileSystemObject {
         this.children = new HashMap();
     }
 
+    public Directory(String path, Permission permission, FileSystemObject parent) {
+        this.path = path;
+        this.parent = parent;
+        this.permission = permission;
+        this.children = new HashMap();
+    }
+
     private Directory(Directory dir) {
         this.path = dir.getPath();
+        this.parent = dir.parent;
         this.permission = dir.getPermission();
         this.children = dir.getChildren();
     }
@@ -47,8 +55,8 @@ public class Directory extends FileSystemObject {
     }
 
     public String open(String path) {
-        if(this.children.containsKey(path)) {
-            return ((File)this.children.get(path)).getContent();
+        if (this.children.containsKey(path)) {
+            return ((File) this.children.get(path)).getContent();
         } else {
             return "Object not found";
         }
@@ -70,9 +78,12 @@ public class Directory extends FileSystemObject {
     // ---------- M U T A T O R S ----------
     // ---------- --------------- ----------
 
+    public FileSystemObject getParent() {
+        return this.parent;
+    }
 
     private Map<String, FileSystemObject> getChildren() {
-        return children;
+        return this.children;
     }
 }
 

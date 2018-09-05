@@ -39,28 +39,24 @@ public class Directory extends FileSystemObject {
     // ---------- O V E R R I D E S ----------
     // ---------- ----------------- ----------
 
-    @Override
-    protected void create(FileSystemObject fso) {
+    private void create(FileSystemObject fso) {
         //fso.parent = this;
         String path = this.path + fso.getPath() + "/";
         fso.setPath(path);
         this.children.put(path, fso);
     }
 
-    @Override
-    protected void open() {
+    private void open() {
 
     }
 
-    @Override
-    protected void rename(String newName) {
+    private void rename(String newName) {
 
     }
 
-    @Override
-    protected void delete(String path) {
+    private void delete(String path) {
         if (this.children.containsKey(this.path + path + "/")) {
-                this.children.remove(this.path + path + "/");
+            this.children.remove(this.path + path + "/");
         } else {
             System.out.println("Object doesn't exist");
         }

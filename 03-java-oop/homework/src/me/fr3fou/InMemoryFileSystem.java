@@ -47,6 +47,7 @@ public class InMemoryFileSystem {
 
         // touch readme
         fs.createFile("readme", Permission.READ_WRITE, FileType.TEXT, "this is an example");
+        fs.openFile("readme");
 
     }
 }

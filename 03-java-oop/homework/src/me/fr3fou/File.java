@@ -16,27 +16,4 @@ public class File extends FileSystemObject {
         this.isOpen = false;
     }
 
-    // ---------- ----------------- ----------
-    // ---------- O V E R R I D E S ----------
-    // ---------- ----------------- ----------
-
-    @Override
-    protected void create(FileSystemObject fso) {
-
-    }
-
-    @Override
-    protected void open() {
-
-    }
-
-    @Override
-    protected void rename(String newName) {
-
-    }
-
-    @Override
-    protected void delete(String path) {
-
-    }
 }

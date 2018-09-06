@@ -6,7 +6,7 @@ GitHub repo for the Geeky-Camp-5.0 (31/09/2018 -> 14/09/2018)
 - 02.09 - [Java OOP](/03-java-oop/) | Clean Code
 - 03.09 - [Linux](/04-linux/) | IoT
 - 04.09 - [Machine Learning](/06-machine-learning/) | [Blockchain](/07-blockchain/)
-- 05.09 - [Algorithms](/08-algorithms/) | [Data structures](/09-genetic-algorithms) 
+- 05.09 - [Algorithms](/08-algorithms/) | [Genetic Algorithms](/09-genetic-algorithms) 
 - 06.09 - [Databases](/10-databases)
 - 07.09 - Security | Hacking
 - 08.09 - Mobile apps

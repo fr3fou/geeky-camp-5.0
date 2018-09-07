@@ -31,7 +31,7 @@ contract DDNS {
     
     function withdraw(uint value) public {
         require(msg.sender == contractOwner);
-        contractOwner.transfer(value);
+        contractOwner.transfer(value * (10**18));
     }
     
 }

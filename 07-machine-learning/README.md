@@ -1,6 +1,6 @@
 # Machine Learning
 
-[PDF Presentation]()
+[PDF Presentation](https://github.com/GeekyCamp/geeky-camp-5/blob/master/06-machine-learning/machine-learning.pdf)
 
 ## Overview
 
